@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>B-Academy </title>
+    <link href="//fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style-starter.css">
+</head>
+<body>
+    <!--/Header-->
+    <header id="site-header" class="fixed-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light stroke py-lg-0">
+                <h1><a class="navbar-brand pe-xl-5 pe-lg-4" href="index.html">
+                        <span class="w3yellow">B</span>-FootBall Academy
+                    </a></h1>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+                    <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-lg-auto my-2 my-lg-0 navbar-nav-scroll">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="programs.html">Programs</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mobile-position">
+                    <nav class="navigation">
+                    </nav>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!--//Header-->
+
+    <!--/main-slider -->
+    <div class="slider_container">
+        <section class="w3l-main-slider banner-slider position-relative" id="home">
+            <div class="slider-wrapper">
+                <div class="slider-item banner-top1">
+                    <div class="container">
+                        <div class="banner-info header-hero-19">
+                            <h5>Ignite Your Passion</h5>
+                            <h3 class="title-hero-19">Unleash Your Potential.</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider-item banner-top2">
+                    <div class="container">
+                        <div class="banner-info header-hero-19">
+                            <h5>Join Our Team</h5>
+                            <h3 class="title-hero-19">Achieve Greatness Together.</h3>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="slider-item banner-top3">
+                    <div class="container">
+                        <div class="banner-info header-hero-19">
+                            <h5>Join Our Team</h5>
+                            <h3 class="title-hero-19">Achieve Greatness Together.</h3>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="slider-item banner-top4">
+                    <div class="container">
+                        <div class="banner-info header-hero-19">
+                            <h5>Join Our Team</h5>
+                            <h3 class="title-hero-19">Achieve Greatness Together.</h3>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Add more items as needed -->
+            </div>
+            <div class="slider-nav">
+                <span class="prev">&#10094;</span>
+                <span class="next">&#10095;</span>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            let currentIndex = 0;
+            const items = document.querySelectorAll('.slider-item');
+            const totalItems = items.length;
+            const sliderWrapper = document.querySelector('.slider-wrapper');
+        
+            function showSlide(index) {
+                sliderWrapper.style.transform = `translateX(-${index * 100}%)`;
+            }
+        
+            function nextSlide() {
+                currentIndex = (currentIndex + 1) % totalItems;
+                showSlide(currentIndex);
+            }
+        
+            function prevSlide() {
+                currentIndex = (currentIndex - 1 + totalItems) % totalItems;
+                showSlide(currentIndex);
+            }
+        
+            document.querySelector('.next').addEventListener('click', nextSlide);
+            document.querySelector('.prev').addEventListener('click', prevSlide);
+        
+            // Auto slide
+            setInterval(nextSlide, 3000);
+        
+            // Show the first slide initially
+            showSlide(currentIndex);
+        });
+        </script>
+    <!-- //main-slider -->
+
+
+    <!--/bottom-3-grids-->
+    <div class="w3l-3-grids py-5" id="grids-3">
+        <div class="container py-md-5 py-2">
+            <!--/row-1-->
+            <div class="row mb-5 pb-lg-4">
+                <div class="col-lg-4 pe-lg-4">
+                    <div class="title-content text-left">
+                        <h6 class="title-subw3hny mb-1">About US > Mission </h6>
+                        <h3 class="title-w3l">To provide a world-class football training experience that empowers young athletes to achieve their dreams.</h3>
+                        <h3 class="title-w3l">To instill a love of the game and develop well-rounded individuals with strong character and leadership skills</h3>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-lg-0 mt-md-5 mt-4 ps-lg-4">
+                    <p class="">B-Football Academy is a premier football academy dedicated to nurturing young talent. We provide a comprehensive training program that focuses on technical skills, tactical awareness, physical fitness, and mental fortitude. Our experienced coaches create a supportive and challenging environment where players can thrive and reach their full potential.</p>
+                </div>
+            </div>
+            <!--//row-1-->
+        </div>
+    </div>
+    <!--//bottom-3-grids-->
+
+    <!--/-footer-->
+    <footer class="w3l-footer-29-main">
+        <div class="footer-29 py-5">
+            <div class="container py-lg-4">
+                <h2>We Harnessed & Your Abilities</h2>
+                <div class="row footer-top-29 mt-md-5 mt-4">
+                    <div class="col-lg-3 col-md-6 footer-list-29 footer-1">
+                        <h6 class="footer-title-29">Address</h6>
+                        <div class="footer-listw3-grids">
+                            <ul class="footer-listw3">
+                                <li>Monrovia, Liberia</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-list-29 footer-3 mt-lg-0 mt-5 pe-lg-5">
+                        <h6 class="footer-title-29">Say hello</h6>
+                        <div class="footer-listw3-grids">
+                            <ul class="footer-listw3">
+                                <li><a href="tel:+(21) 255 999 8888">+(231) 00 000 0000</a></li>
+                                <li><a href="mailto:Workcore@mail.com" class="mail">bacademy@mail.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-copies text-center">
+                    <p class="copy-footer-29">© 2025 b-academy. All rights reserved | Designed by <a href="#">B-Academy</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- move top -->
+        <button onclick="topFunction()" id="movetop" title="Go to top">
+            <span class="fa fa-angle-up"></span>
+        </button>
+        <script>
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {
+                scrollFunction()
+            };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("movetop").style.display = "block";
+                } else {
+                    document.getElementById("movetop").style.display = "none";
+                }
+            }
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+        <!-- //move top -->
+    </footer>
+    <!-- Template JavaScript -->
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/theme-change.js"></script>
+   
+    <!-- MENU-JS -->
+    <script>
+        $(window).on("scroll", function() {
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 80) {
+                $("#site-header").addClass("nav-fixed");
+            } else {
+                $("#site-header").removeClass("nav-fixed");
+            }
+        });
+
+        //Main navigation Active Class Add Remove
+        $(".navbar-toggler").on("click", function() {
+            $("header").toggleClass("active");
+        });
+        $(document).on("ready", function() {
+            if ($(window).width() > 991) {
+                $("header").removeClass("active");
+            }
+            $(window).on("resize", function() {
+                if ($(window).width() > 991) {
+                    $("header").removeClass("active");
+                }
+            });
+        });
+    </script>
+
+
+    <script>
+        $(function() {
+            $('.navbar-toggler').click(function() {
+                $('body').toggleClass('noscroll');
+            })
+        });
+    </script>
+    <script src="assets/js/bootstrap.min.js"></script>
+</body>
+</html>
