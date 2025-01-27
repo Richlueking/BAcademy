@@ -7008,7 +7008,8 @@ fieldset:disabled .btn {
 }
 
 .fixed-top {
-    position: fixed;
+    /* position: fixed;*/
+    background-color: black;
     top: 0;
     right: 0;
     left: 0;
